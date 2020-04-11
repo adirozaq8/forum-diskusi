@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/index.css">
+  <title>Forum Diskusi</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <!-- logo -->
+        <div class="left-nav logo">
+          <img id="pic-logo" src="./assets/pictures/conversation.png" alt="Logo">
+          <span class="text-logo">Forum Diskusi</span>
+        </div>
+        <!-- Search Bar -->
+        <div class="left-nav search-bar">
+          <input id="search-bar" type="text" placeholder="Cari Sesuatu...">
+          <button id="search-bar-button" class="btn-search text-large">Search</button>
+        </div>
+        <!-- Nama -->
+        <div class="rigth-nav">
+          <p class="text-white no-margin name-nav">Halo, <span id="nama"></span></p>
+          <button id="logout" class="logout">Logout</button>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content" class="left-column">
+      <!-- new post -->
+      <div class="container post-container">
+        <textarea name="message" id="message" placeholder="Pesan diskusi baru..."></textarea>
+        <button id="kirim" class="button">Kirim</button>
+      </div>
+
+      <!-- forum diskusi -->
+      <div id="articles">
+        <!-- Tag artikel digenerate oleh javascript -->
+<!--
+        <article class="container card">
+          <div class="card-container">
+              <img class="avatar" src="./assets/pictures/avatars/${avatar}" alt="${name}">
+            <div>
+              <h4 class="no-margin nama-card">${name}</h4>
+              <p class="no-margin text-card">${message}</p>    
+            </div>
+          </div>
+        </article>
+-->
+      </div>
+    </div>
+
+    <!-- data diri -->
+    <aside class="right-column">
+      <div class="container profile">
+        <img src="./assets/pictures/profile/fotoprofil.jpg" class="profile-pic">
+        <div class="container">
+          <div>
+            <h3 class="profile-name">Rozaq Adi Sagoro</h3>
+            <p class="profile-occupation">Mahasiswa</p>
+          </div>
+          <p><a class="profile-link" href="mailto:rozaq.adi8@gmail.com"><img src="./assets/pictures/gmail.png" class="profile-icon"> Email</a></p>
+          <p><a class="profile-link" href="https://www.twitter.com/rozaq_adi"><img src="./assets/pictures/twitter.png" class="profile-icon"> Twitter</a></p>
+          <p><a class="profile-link" href="https://www.github.com/adirozaq8"><img src="./assets/pictures/github.png" class="profile-icon">  Github</a></p>
+          <p><a class="profile-link" href="https://www.dicoding.com/users/796017"><img src="./assets/pictures/dicoding.ico" class="profile-icon">  Dicoding</a></p>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <!-- copyright -->
+    <div class="footer-bar text-white">
+      <p>Copyright 2020 Rozaq Adi Sagoro</p>
+    </div>
+  </footer>
+  <script src="./assets/index.js"></script>
+</body>
+</html>
