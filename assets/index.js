@@ -4,7 +4,7 @@ function newMessage(name, message){
   if (name === "Anonymous"){
     avatar = "anonymous.png"
   } else if (alpha.indexOf(name[0].toLowerCase()) !== -1){
-    avatar = name[0].toLowerCase() + ".ico"
+    avatar = name[0].toLowerCase() + ".png"
   } else {
     avatar = "avatar.png"
   }
