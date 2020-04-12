@@ -74,6 +74,12 @@ nav ul div{
   color: white
 }
 
+.btn-search:hover {
+  background: white;
+  transition: 0.2s;
+  color: #2c3e50;
+}
+
 .right-nav {
   float: right;
   width: 33.33%;
@@ -181,7 +187,8 @@ nav ul div{
 
 .avatar {
   height: 64px;
-  padding-right: 1.5%;
+  border-radius: 5px;
+  margin-right: 1.5%;
 }
 
 /* PROFILE SECTION */
@@ -246,7 +253,16 @@ footer {
   text-align: center;
 }
 
-@media all and (max-width: 768px) { 
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .navbar ul {
+    padding-left: 2%;
+  }
+  
   .text-large {
     font-size: 15px;
   }
@@ -296,14 +312,14 @@ footer {
   }
 
   .name-nav {
-    margin-right: 12.5%;
+    margin-right: 2%;
   }
   
   .logout {
     float: right;
     background: #2c3e50;
     border: 0.5px solid white;
-    margin: 5px 12.5% 0 0;
+    margin: 5px 2% 0 0;
     border-radius: 10px;
     min-width: 70px;
     color: white
